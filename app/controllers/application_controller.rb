@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   def authenticate_user!
     unless signed_in?
       flash[:error] = 'You need to sign in for access to this page.'
-      redirect_to '/auth/myusa'
+      redirect_to '/auth/google_oauth2'
     end
   end
 

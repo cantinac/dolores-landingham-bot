@@ -1,12 +1,8 @@
-MYUSA_KEY = ENV.fetch("MYUSA_KEY")
-MYUSA_SECRET = ENV.fetch("MYUSA_SECRET")
-MYUSA_URL = ENV["MYUSA_URL"] || 'https://alpha.my.usa.gov'
-
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :myusa, MYUSA_KEY, MYUSA_SECRET, {
-    scope: "profile.email",
+  provider :google_oauth2, ENV["GOOGLE_CLIENT_ID"], ENV["GOOGLE_CLIENT_SECRET"], {
+    scope: "userinfo.email",
+    access_type: 'online',
     client_options: {
-      site: MYUSA_URL,
       token_url: "/oauth/authorize"
     }
   }

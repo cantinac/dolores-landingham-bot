@@ -1,11 +1,11 @@
 module OauthHelper
   def login_with_oauth
     setup_mock_auth
-    visit "/auth/myusa"
+    visit "/auth/google_oauth2"
   end
 
   def setup_mock_auth
-    OmniAuth.config.mock_auth[:myusa] = OmniAuth::AuthHash.new(
+    OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
       provider: "myusa",
       raw_info: {
         "name" => "George Jetson"
@@ -14,7 +14,7 @@ module OauthHelper
       nickname: "georgejetsonmyusa",
       extra: {
         "raw_info" => {
-          "email" => "test@gsa.gov",
+          "email" => "test@cantinaconsulting.com",
           "first_name" => "George",
           "last_name" => "Jetson"
         }
