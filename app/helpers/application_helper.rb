@@ -1,5 +1,5 @@
 module ApplicationHelper
   def auth_path
-    '/auth/myusa'
+    '/auth/google_oauth2'
   end
 end
