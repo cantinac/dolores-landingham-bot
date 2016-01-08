@@ -4,79 +4,52 @@
 
 ![Dolores](http://seattletimes.nwsource.com/ABPub/2006/05/11/2002987603.jpg)
 
-This is a Slack bot that helps onboard new hires at 18F through scheduled Slack
-messages about topics relevant to 18F and GSA employees. Messages will be
-scheduled once per day and will trickle out to employees over the course of 60
-days.
-
-Mrs. Landingham will teach 18F employees about working in the federal
-government, how to set up travel, how to add their biographical information and
-pictures to our website, and other facts that will help them get acclimated to
-both 18F and the federal government.
+This is a Slack bot that helps onboard new hires at Cantina through scheduled Slack
+messages about topics relevant to our employees. Mrs. Landingham will walk you through how we work, 
+where you can find information, and other general information that is important to new hires.
 
 Please file an issue if you have any questions about Mrs. Landingham.
+
+Mrs. Landingham is a forked bot, created by the fine folks at [18F](https://github.com/18F/dolores-landingham-bot)
 
 ### Usage Instructions
 
 **To add new users**
 
-1. Go https://dolores-app.18f.gov/
-2. Click https://dolores-app.18f.gov/employees/new
+1. Go to https://cantina-onboarding-bot.herokuapp.com/
+2. Login in with your Cantina account
+2. Click [Add an employee](https://cantina-onboarding-bot.herokuapp.com/employees/new)
 3. Write their Slack username without the @ symbol
 4. Select the date that they started
 5. Select the time zone that they reside in
-6. Click https://dolores-app.18f.gov/employees to make sure they’re on the list
+6. Click [See all employees](https://cantina-onboarding-bot.herokuapp.com/employees) to make sure they’re on the list
 
 **To add new messages**
 
-1. Draft the message in this Google Doc
-2. Copy the message and paste it in the message body here: https://dolores-app.18f.gov/scheduled_messages/new
+1. Draft the message in a Google Doc
+2. Copy the message and paste it in the message body at [create scheduled message](https://cantina-onboarding-bot.herokuapp.com/scheduled_messages/new)
 3. Add a title to your message to be able to identify the message
-4. Add the number of days after an employee starts. (Add 1 to the last message in this Google Doc)
+4. Add the number of days *after* an employee starts.
 5. Select a time that the message should be sent (the message will be sent at each employee's local time)
 6. Add tags to be able to surface the message
 
-
-### Contributing
-
-If you're interested in setting up a version of this bot or contributing to this one, read our [contribution guidelines](CONTRIBUTING.md) to find out how to set up and deploy this app, check out potential tasks to work on, and learn our guidelines for submitting pull requests.
-
-### Not sure what to work on?
-
-Check out the [Dolores Bot Waffle.io
-board](https://waffle.io/18F/dolores-landingham-bot) and pick out something in
-the "Up next" column. Make sure you move the feature you're working on the "In
-progress" and assign it to yourself so we all know who is working on what.
-
 ### Using Dolores
 
-18F employees can view the scheduled messages that Dolores sends employees by visiting
-https://dolores-app.18f.gov/.
+Employees can view the scheduled messages that Dolores sends employees by visiting
+https://cantina-onboarding-bot.herokuapp.com/.
 
-Any 18F employee with a Slack handle can add themselves as a Dolores Landingham
-message recipient [here](https://dolores-app.18f.gov/).
+Any Cantina employee with a Slack handle can add themselves as a Dolores Landingham
+message recipient [here](https://cantina-onboarding-bot.herokuapp.com/). You'll have to set your start day as today though.
 
 Only admin users can add and update scheduled messages. If you would like to
-add or update scheduled messages, please DM Melody Kramer on Slack or open an
-Issue on this repo.
+add or update scheduled messages, please DM Hondo on Slack 
 
 Admin users can add scheduled messages
-[here](https://dolores-app.18f.gov/scheduled_messages/new).
+[here](https://cantina-onboarding-bot.herokuapp.com/scheduled_messages/new).
 
 Scheduled messages include a "day count" attribute. Messages to be sent on the
 day an employee starts have a day count of 0, messages to be sent the next day
 should have a day count of 1, and so on.
-
-### Questions?
-
-If you have any questions about the Dolores Bot project and are internal to 18F,
-you can chat us up in the [#bots](https://18f.slack.com/messages/bots/) Slack
-channel.
-
-If you are not internal to 18F and have a question, we would be delighted to
-help. Please [open a GitHub
-issue](https://github.con/18F/dolores-landingham-bot/issues/new) and we will get back to
-you as soon as we can.
 
 ### Public domain
 
